@@ -45,6 +45,11 @@ npm run lint
 npm run lint -- --fix
 ```
 
+## Struture
+
+The questionnaire page is located at /src/views/form/index.vue 
+Please feel free to test & modify
+
 ## Browsers support
 
 Modern browsers and Internet Explorer 10+.
