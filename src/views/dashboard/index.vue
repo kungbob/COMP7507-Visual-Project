@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">Welcom to Visualization Platform!</div>
+    <div class="dashboard-text">Welcome to 2020 Legislative Council Election Visualization Platform!</div>
   </div>
 </template>
 

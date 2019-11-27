@@ -54,7 +54,56 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+  {
+    path: '/tableau',
+    component: Layout,
+    redirect: '/tableau/HKIsland',
+    name: 'Example',
+    meta: { title: 'HK Island', icon: 'example' },
+    children: [
+      {
+        path: 'HKIsland',
+        name: 'HKIsland',
+        redirect: '/tableau/HKIsland/HKIsland1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'HKIsland', icon: 'table' },
+        children: [
+          {
+            path: 'HKIsland1',
+            component: () => import('@/views/tableau/HKIsland1'),
+            name: 'HKIsland 1',
+            meta: { title: 'HKIsland1', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland2',
+            component: () => import('@/views/tableau/HKIsland2'),
+            name: 'HKIsland 2',
+            meta: { title: 'HKIsland2', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland3',
+            component: () => import('@/views/tableau/HKIsland3'),
+            name: 'HKIsland 3',
+            meta: { title: 'HKIsland3', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland4',
+            component: () => import('@/views/tableau/HKIsland4'),
+            name: 'HKIsland 4',
+            meta: { title: 'HKIsland4', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'tree',
+        name: 'Tree',
+        component: () => import('@/views/tree/index'),
+        meta: { title: 'Tree', icon: 'tree' }
+      }
+    ]
+  },
 
+  /*
   {
     path: '/example',
     component: Layout,
@@ -76,7 +125,7 @@ export const constantRoutes = [
       }
     ]
   },
-
+  */
   {
     path: '/form',
     component: Layout,
@@ -89,7 +138,7 @@ export const constantRoutes = [
       }
     ]
   },
-
+  /*
   {
     path: '/nested',
     component: Layout,
@@ -147,13 +196,14 @@ export const constantRoutes = [
       }
     ]
   },
+  */
 
   {
     path: 'external-link',
     component: Layout,
     children: [
       {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
+        path: 'https://www.eac.hk/en/legco/lce.htm',
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
