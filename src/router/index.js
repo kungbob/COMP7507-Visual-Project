@@ -95,6 +95,138 @@ export const constantRoutes = [
         ]
       },
       {
+        path: 'KlnWest',
+        name: 'KlnWest',
+        redirect: '/tableau/KlnWest/KlnWest1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'KlnWest', icon: 'table' },
+        children: [
+          {
+            path: 'KlnWest1',
+            component: () => import('@/views/tableau/KlnWest1'),
+            name: 'KlnWest 1',
+            meta: { title: 'KlnWest1', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest2',
+            component: () => import('@/views/tableau/KlnWest2'),
+            name: 'KlnWest 2',
+            meta: { title: 'KlnWest2', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest3',
+            component: () => import('@/views/tableau/KlnWest3'),
+            name: 'KlnWest 3',
+            meta: { title: 'KlnWest3', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest4',
+            component: () => import('@/views/tableau/KlnWest4'),
+            name: 'KlnWest 4',
+            meta: { title: 'KlnWest4', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'KlnEast',
+        name: 'KlnEast',
+        redirect: '/tableau/KlnEast/KlnEast1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'KlnEast', icon: 'table' },
+        children: [
+          {
+            path: 'KlnEast1',
+            component: () => import('@/views/tableau/KlnEast1'),
+            name: 'KlnEast 1',
+            meta: { title: 'KlnEast1', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast2',
+            component: () => import('@/views/tableau/KlnEast2'),
+            name: 'KlnEast 2',
+            meta: { title: 'KlnEast2', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast3',
+            component: () => import('@/views/tableau/KlnEast3'),
+            name: 'KlnEast 3',
+            meta: { title: 'KlnEast3', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast4',
+            component: () => import('@/views/tableau/KlnEast4'),
+            name: 'KlnEast 4',
+            meta: { title: 'KlnEast4', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'NTWest',
+        name: 'NTWest',
+        redirect: '/tableau/NTWest/NTWest1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'NTWest', icon: 'table' },
+        children: [
+          {
+            path: 'NTWest1',
+            component: () => import('@/views/tableau/NTWest1'),
+            name: 'NTWest 1',
+            meta: { title: 'NTWest1', icon: 'table'  }
+          },
+          {
+            path: 'NTWest2',
+            component: () => import('@/views/tableau/NTWest2'),
+            name: 'NTWest 2',
+            meta: { title: 'NTWest2', icon: 'table'  }
+          },
+          {
+            path: 'NTWest3',
+            component: () => import('@/views/tableau/NTWest3'),
+            name: 'NTWest 3',
+            meta: { title: 'NTWest3', icon: 'table'  }
+          },
+          {
+            path: 'NTWest4',
+            component: () => import('@/views/tableau/NTWest4'),
+            name: 'NTWest 4',
+            meta: { title: 'NTWest4', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'NTEast',
+        name: 'NTEast',
+        redirect: '/tableau/NTEast/NTEast1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'NTEast', icon: 'table' },
+        children: [
+          {
+            path: 'NTEast1',
+            component: () => import('@/views/tableau/NTEast1'),
+            name: 'NTEast 1',
+            meta: { title: 'NTEast1', icon: 'table'  }
+          },
+          {
+            path: 'NTEast2',
+            component: () => import('@/views/tableau/NTEast2'),
+            name: 'NTEast 2',
+            meta: { title: 'NTEast2', icon: 'table'  }
+          },
+          {
+            path: 'NTEast3',
+            component: () => import('@/views/tableau/NTEast3'),
+            name: 'NTEast 3',
+            meta: { title: 'NTEast3', icon: 'table'  }
+          },
+          {
+            path: 'NTEast4',
+            component: () => import('@/views/tableau/NTEast4'),
+            name: 'NTEast 4',
+            meta: { title: 'NTEast4', icon: 'table'  }
+          },
+        ]
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
