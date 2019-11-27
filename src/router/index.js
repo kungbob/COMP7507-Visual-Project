@@ -227,6 +227,45 @@ export const constantRoutes = [
         ]
       },
       {
+        path: 'Comparison',
+        name: 'Comparison',
+        redirect: '/tableau/Comparison/Comparison1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'Comparison', icon: 'table' },
+        children: [
+          {
+            path: 'Comparison1',
+            component: () => import('@/views/tableau/Comparison1'),
+            name: 'Comparison 1',
+            meta: { title: 'Comparison1', icon: 'table'  }
+          },
+          {
+            path: 'Comparison2',
+            component: () => import('@/views/tableau/Comparison2'),
+            name: 'Comparison 2',
+            meta: { title: 'Comparison2', icon: 'table'  }
+          },
+          {
+            path: 'Comparison3',
+            component: () => import('@/views/tableau/Comparison3'),
+            name: 'Comparison 3',
+            meta: { title: 'Comparison3', icon: 'table'  }
+          },
+          {
+            path: 'Comparison4',
+            component: () => import('@/views/tableau/Comparison4'),
+            name: 'Comparison 4',
+            meta: { title: 'Comparison4', icon: 'table'  }
+          },
+          {
+            path: 'Comparison5',
+            component: () => import('@/views/tableau/Comparison5'),
+            name: 'Comparison 5',
+            meta: { title: 'Comparison5', icon: 'table'  }
+          },
+        ]
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
