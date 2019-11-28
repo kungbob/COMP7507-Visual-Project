@@ -59,7 +59,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/tableau/HKIsland',
     name: 'Example',
-    meta: { title: 'HK Island', icon: 'example' },
+    meta: { title: 'Tableau Graph', icon: 'example' },
     children: [
       {
         path: 'HKIsland',
@@ -261,6 +261,45 @@ export const constantRoutes = [
             path: 'Comparison5',
             component: () => import('@/views/tableau/Comparison5'),
             name: 'Comparison 5',
+            meta: { title: 'NT East', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'Motion',
+        name: 'Motion Analytics',
+        redirect: '/tableau/Motion/Motion1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'Motion Analytics', icon: 'table' },
+        children: [
+          {
+            path: 'Motion1',
+            component: () => import('@/views/tableau/Motion1'),
+            name: 'Motion 1',
+            meta: { title: 'HK Island', icon: 'table'  }
+          },
+          {
+            path: 'Motion2',
+            component: () => import('@/views/tableau/Motion2'),
+            name: 'Motion 2',
+            meta: { title: 'Kowloon West', icon: 'table'  }
+          },
+          {
+            path: 'Motion3',
+            component: () => import('@/views/tableau/Motion3'),
+            name: 'Motion 3',
+            meta: { title: 'Kowloon East', icon: 'table'  }
+          },
+          {
+            path: 'Motion4',
+            component: () => import('@/views/tableau/Motion4'),
+            name: 'Motion 4',
+            meta: { title: 'NT West', icon: 'table'  }
+          },
+          {
+            path: 'Motion5',
+            component: () => import('@/views/tableau/Motion5'),
+            name: 'Motion 5',
             meta: { title: 'NT East', icon: 'table'  }
           },
         ]
