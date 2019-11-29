@@ -76,6 +76,28 @@
     <div v-else>
       <v-chart auto-resize :options="graph" />
 
+      <span>Your Selection on Issues:</span>
+      <br>
+      <div v-for="question in questionList" :key="question.no">
+        <span style="white-space: nowrap">{{question.name}} - 
+          <div v-if="question.value == -2">
+            <p>Very Disargee</p>
+          </div>
+          <div v-if="question.value == -1">
+            <p>Disargee</p>
+          </div>
+          <div v-if="question.value == 0">
+            <p>Neutral</p>
+          </div>
+          <div v-if="question.value == 1">
+            <p>Agree</p>
+          </div>
+          <div v-if="question.value == 2">
+            <p>Very Agree</p>
+          </div>
+        </span>
+      </div>  
+      <br>
       <span>The candidate that the platform recommend is {{recommendCandidates}}</span>
     </div>
   </div>
@@ -83,6 +105,7 @@
 
 <script>
 import jsonData from "@/../public/Data/data.json";
+import baseData from "@/../public/Data/csvjson.json";
 
 import ECharts from "vue-echarts";
 import "echarts/lib/chart/line";
@@ -120,10 +143,6 @@ export default {
         xAxis: {
           type: "category",
           boundaryGap: true,
-          axisLabel:{
-            interval: 1,
-            rotate: 45
-          },
           data: []
         },
         yAxis: {
@@ -153,6 +172,7 @@ export default {
         ]
       },
       allData: jsonData,
+      allCandidatesData: baseData,
       topics: [],
       selectedTopics: [],
       candidatesByRegion: {},
@@ -175,13 +195,13 @@ export default {
         }
 
         if (this.allData[i]['region'] in this.candidatesByRegion) {
-          if (this.candidatesByRegion[this.allData[i]['region']].includes(this.allData[i]['name-en'])){
+          if (this.candidatesByRegion[this.allData[i]['region']].includes(this.allData[i]['display-name'])){
 
           } else {
-            this.candidatesByRegion[this.allData[i]['region']].push(this.allData[i]['name-en'])
+            this.candidatesByRegion[this.allData[i]['region']].push(this.allData[i]['display-name'])
           }
         } else {
-          this.candidatesByRegion[this.allData[i]['region']] = [this.allData[i]['name-en']]
+          this.candidatesByRegion[this.allData[i]['region']] = [this.allData[i]['display-name']]
 
         }
       }
@@ -226,15 +246,23 @@ export default {
     },
     setValue() {
       var valueList = [[],[],[],[]];
-      var questionList = [];
-      for (var i = 0; i < 5; i++) {
-        var base = 0;
-        var pickedCandidates = this.candidatesByRegion[this.area]
-        for (var j = 0; j < pickedCandidates.length; j ++ ){
+      var questionList = ['Base Score'];
 
+      var pickedCandidates = this.candidatesByRegion[this.area]
+
+      for (var j = 0; j < pickedCandidates.length; j++) {
+        var selected = this.search(pickedCandidates[j], this.allCandidatesData)
+        var baseScore = selected['Total marks']
+        valueList[j].push(baseScore)
+      }
+      
+      for (var i = 0; i < 5; i++) {
+
+        for (var j = 0; j < pickedCandidates.length; j ++ ){
+          var base = valueList[j][0]
           var score = parseInt(this.questionList[i].value);
           var result = this.allData.filter(obj => {
-            return (obj['name-en'] === pickedCandidates[j] && obj['debating-issue'] === this.questionList[i].name)
+            return (obj['display-name'] === pickedCandidates[j] && obj['debating-issue'] === this.questionList[i].name)
           })
           
           if (result[0]['vote'] == 'Yes') {
@@ -244,17 +272,17 @@ export default {
           } else {
             score *= 0
           }
+          score *= result[0]['entropy']
           base += score
           valueList[j].push(base)
         }
-
-        questionList.push("Issues on \n" + this.questionList[i].name);
+        questionList.push("Issues on \n" + this.questionList[i].no);
       }
 
       this.$set(this.graph.xAxis, "data", questionList);
 
       this.$set(this.graph.legend, 'data', this.candidatesByRegion[this.area])
-
+      
       for (var i = 0 ; i < this.candidatesByRegion[this.area].length; i++){
         this.$set(this.graph.series[i], "data", valueList[i]);
         this.$set(this.graph.series[i], "name", this.candidatesByRegion[this.area][i]);
@@ -284,6 +312,13 @@ export default {
         }
 
         return maxIndex;
+    },
+    search(nameKey, myArray){
+        for (var i = 0; i < myArray.length; i++) {
+            if (myArray[i]['Candidates English Name'] === nameKey) {
+                return myArray[i];
+            }
+        }
     },
     onCancel() {
       this.$message({
