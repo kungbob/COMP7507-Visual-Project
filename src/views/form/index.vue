@@ -119,7 +119,11 @@ export default {
         },
         xAxis: {
           type: "category",
-          boundaryGap: false,
+          boundaryGap: true,
+          axisLabel:{
+            interval: 1,
+            rotate: 45
+          },
           data: []
         },
         yAxis: {
@@ -244,7 +248,7 @@ export default {
           valueList[j].push(base)
         }
 
-        questionList.push("Issues on " + this.questionList[i].no);
+        questionList.push("Issues on \n" + this.questionList[i].name);
       }
 
       this.$set(this.graph.xAxis, "data", questionList);
