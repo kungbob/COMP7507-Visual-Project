@@ -2,7 +2,6 @@
 
 **The current version is `v4.0+` build on `vue-cli`.
 
-## Testing
 ## Build Setup
 
 ```bash
