@@ -27,7 +27,7 @@ export default {
     const oIframe = document.getElementById("iframe");
     const deviceWidth = document.documentElement.clientWidth;
     const deviceHeight = document.documentElement.clientHeight;
-    oIframe.style.width = Number(deviceWidth) - 220 + "px";
+    oIframe.style.width = (Number(deviceWidth) - 220)* 0.95 + "px";
     oIframe.style.height = Number(deviceHeight) - 120 + "px";
   }
 }
