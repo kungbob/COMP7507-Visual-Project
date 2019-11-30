@@ -54,6 +54,183 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+
+  {
+    path: '/candidates',
+    component: Layout,
+    redirect: '/candidates/HKIsland',
+    name: 'Candidates',
+    meta: { title: 'Candidates Information', icon: 'example' },
+    children: [
+      {
+        path: 'HKIsland',
+        name: 'HKIsland',
+        redirect: '/candidates/HKIsland/HKIsland1',
+        component: () => import('@/views/Candidates/index'),
+        meta: { title: 'Hong Kong Island', icon: 'table' },
+        children: [
+          {
+            path: 'HKIsland1',
+            component: () => import('@/views/Candidates/ChanTanya'),
+            name: 'HKIsland Candidate 1',
+            meta: { title: 'Chan Tanya', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland2',
+            component: () => import('@/views/tableau/HuiChiFung'),
+            name: 'HKIsland Candidate 2',
+            meta: { title: 'Hui Chi Fung', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland3',
+            component: () => import('@/views/tableau/IpLauSukYeeRegina'),
+            name: 'HKIsland Candidate 3',
+            meta: { title: 'Ip Lau Suk Yee Regina', icon: 'table'  }
+          },
+          {
+            path: 'HKIsland4',
+            component: () => import('@/views/tableau/KwokWaiKeung'),
+            name: 'HKIsland Candidate 4',
+            meta: { title: 'Kwok Wai Keung', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'KlnWest',
+        name: 'KlnWest',
+        redirect: '/candidates/KlnWest/KlnWest1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'KlnWest', icon: 'table' },
+        children: [
+          {
+            path: 'KlnWest1',
+            component: () => import('@/views/tableau/KlnWest1'),
+            name: 'KlnWest Candidate 1',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest2',
+            component: () => import('@/views/tableau/KlnWest2'),
+            name: 'KlnWest Candidate 2',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest3',
+            component: () => import('@/views/tableau/KlnWest3'),
+            name: 'KlnWest Candidate 3',
+            meta: { title: 'Records-KlnWest-byCandidate2', icon: 'table'  }
+          },
+          {
+            path: 'KlnWest4',
+            component: () => import('@/views/tableau/KlnWest4'),
+            name: 'KlnWest Candidate 4',
+            meta: { title: 'Records-KlnWest-byVote2', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'KlnEast',
+        name: 'KlnEast',
+        redirect: '/candidates/KlnEast/KlnEast1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'KlnEast', icon: 'table' },
+        children: [
+          {
+            path: 'KlnEast1',
+            component: () => import('@/views/tableau/KlnEast1'),
+            name: 'KlnEast Candidate 1',
+            meta: { title: 'Records-KlnEast-byCandidate1', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast2',
+            component: () => import('@/views/tableau/KlnEast2'),
+            name: 'KlnEast Candidate 2',
+            meta: { title: 'Records-KlnEast-byVote1', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast3',
+            component: () => import('@/views/tableau/KlnEast3'),
+            name: 'KlnEast Candidate 3',
+            meta: { title: 'Records-KlnEast-byCandidate2', icon: 'table'  }
+          },
+          {
+            path: 'KlnEast4',
+            component: () => import('@/views/tableau/KlnEast4'),
+            name: 'KlnEast Candidate 4',
+            meta: { title: 'Records-KlnEast-byVote2', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'NTWest',
+        name: 'NTWest',
+        redirect: '/candidates/NTWest/NTWest1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'NTWest', icon: 'table' },
+        children: [
+          {
+            path: 'NTWest1',
+            component: () => import('@/views/tableau/NTWest1'),
+            name: 'NTWest Candidate 1',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTWest2',
+            component: () => import('@/views/tableau/NTWest2'),
+            name: 'NTWest Candidate 2',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTWest3',
+            component: () => import('@/views/tableau/NTWest3'),
+            name: 'NTWest Candidate 3',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTWest4',
+            component: () => import('@/views/tableau/NTWest4'),
+            name: 'NTWest Candidate 4',
+            meta: { title: '', icon: 'table'  }
+          },
+        ]
+      },
+      {
+        path: 'NTEast',
+        name: 'NTEast',
+        redirect: '/candidates/NTEast/NTEast1',
+        component: () => import('@/views/tableau/index'),
+        meta: { title: 'NTEast', icon: 'table' },
+        children: [
+          {
+            path: 'NTEast1',
+            component: () => import('@/views/tableau/NTEast1'),
+            name: 'NTEast 1',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTEast2',
+            component: () => import('@/views/tableau/NTEast2'),
+            name: 'NTEast 2',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTEast3',
+            component: () => import('@/views/tableau/NTEast3'),
+            name: 'NTEast 3',
+            meta: { title: '', icon: 'table'  }
+          },
+          {
+            path: 'NTEast4',
+            component: () => import('@/views/tableau/NTEast4'),
+            name: 'NTEast 4',
+            meta: { title: '', icon: 'table'  }
+          },
+        ]
+      }
+    ]
+  },
+
+  
   {
     path: '/tableau',
     component: Layout,
