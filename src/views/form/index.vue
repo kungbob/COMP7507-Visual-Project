@@ -43,14 +43,14 @@
           <div v-for="question in questionList" :key="question.no">
             <span
               class="demonstration"
-            >Question {{question.no}}. Do you agree on issues {{question.name}}</span>
+            >Question {{question.no}}. Do you agree with issues {{question.name}}</span>
             <br />
             <el-radio-group v-model="question.value">
-              <el-radio label="-2" name="type">Very Disargee</el-radio>
+              <el-radio label="-2" name="type">Strongly Disargee</el-radio>
               <el-radio label="-1" name="type">Disargee</el-radio>
               <el-radio label="0" name="type">Neutral</el-radio>
               <el-radio label="1" name="type">Agree</el-radio>
-              <el-radio label="2" name="type">Very Agree</el-radio>
+              <el-radio label="2" name="type">Strongly Agree</el-radio>
             </el-radio-group>
           </div>
         </el-form-item>
