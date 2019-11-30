@@ -249,37 +249,25 @@ export const constantRoutes = [
             path: 'HKIsland1',
             component: () => import('@/views/tableau/HKIsland1'),
             name: 'HKIsland 1',
-            meta: { title: 'Records-HKIsland-byCandidate1', icon: 'table'  }
+            meta: { title: '2016 Election Votes', icon: 'table'  }
           },
           {
             path: 'HKIsland2',
             component: () => import('@/views/tableau/HKIsland2'),
             name: 'HKIsland 2',
-            meta: { title: 'Records-HKIsland-byVote1', icon: 'table'  }
+            meta: { title: 'LegCo Attendance', icon: 'table'  }
           },
           {
             path: 'HKIsland3',
             component: () => import('@/views/tableau/HKIsland3'),
             name: 'HKIsland 3',
-            meta: { title: 'Records-HKIsland-byCandidate2', icon: 'table'  }
+            meta: { title: 'LegCo Motions Votes', icon: 'table'  }
           },
           {
             path: 'HKIsland4',
             component: () => import('@/views/tableau/HKIsland4'),
             name: 'HKIsland 4',
-            meta: { title: 'Records-HKIsland-byVote2', icon: 'table'  }
-          },
-          {
-            path: 'Comparison1',
-            component: () => import('@/views/tableau/Comparison1'),
-            name: 'Comparison 1',
-            meta: { title: 'Hong Kong Island Comparison', icon: 'table'  }
-          },
-          {
-            path: 'Motion1',
-            component: () => import('@/views/tableau/Motion1'),
-            name: 'Motion 1',
-            meta: { title: 'Hong Kong Island Motion', icon: 'table'  }
+            meta: { title: 'LegCo Voting Summary', icon: 'table'  }
           },
         ]
       },
@@ -294,37 +282,25 @@ export const constantRoutes = [
             path: 'KlnWest1',
             component: () => import('@/views/tableau/KlnWest1'),
             name: 'KlnWest 1',
-            meta: { title: 'Records-KlnWest-byCandidate1', icon: 'table'  }
+            meta: { title: '2016 Election Votes', icon: 'table'  }
           },
           {
             path: 'KlnWest2',
             component: () => import('@/views/tableau/KlnWest2'),
             name: 'KlnWest 2',
-            meta: { title: 'Records-KlnWest-byVote1', icon: 'table'  }
+            meta: { title: 'LegCo Attendance', icon: 'table'  }
           },
           {
             path: 'KlnWest3',
             component: () => import('@/views/tableau/KlnWest3'),
             name: 'KlnWest 3',
-            meta: { title: 'Records-KlnWest-byCandidate2', icon: 'table'  }
+            meta: { title: 'LegCo Motions Votes', icon: 'table'  }
           },
           {
             path: 'KlnWest4',
             component: () => import('@/views/tableau/KlnWest4'),
             name: 'KlnWest 4',
-            meta: { title: 'Records-KlnWest-byVote2', icon: 'table'  }
-          },
-          {
-            path: 'Comparison2',
-            component: () => import('@/views/tableau/Comparison2'),
-            name: 'Comparison 2',
-            meta: { title: 'Kowloon West Comparison', icon: 'table'  }
-          },
-          {
-            path: 'Motion2',
-            component: () => import('@/views/tableau/Motion2'),
-            name: 'Motion 2',
-            meta: { title: 'Kowloon West Motion', icon: 'table'  }
+            meta: { title: 'LegCo Voting Summary', icon: 'table'  }
           },
         ]
       },
@@ -339,37 +315,25 @@ export const constantRoutes = [
             path: 'KlnEast1',
             component: () => import('@/views/tableau/KlnEast1'),
             name: 'KlnEast 1',
-            meta: { title: 'Records-KlnEast-byCandidate1', icon: 'table'  }
+            meta: { title: '2016 Election Votes', icon: 'table'  }
           },
           {
             path: 'KlnEast2',
             component: () => import('@/views/tableau/KlnEast2'),
             name: 'KlnEast 2',
-            meta: { title: 'Records-KlnEast-byVote1', icon: 'table'  }
+            meta: { title: 'LegCo Attendance', icon: 'table'  }
           },
           {
             path: 'KlnEast3',
             component: () => import('@/views/tableau/KlnEast3'),
             name: 'KlnEast 3',
-            meta: { title: 'Records-KlnEast-byCandidate2', icon: 'table'  }
+            meta: { title: 'LegCo Motions Votes', icon: 'table'  }
           },
           {
             path: 'KlnEast4',
             component: () => import('@/views/tableau/KlnEast4'),
             name: 'KlnEast 4',
-            meta: { title: 'Records-KlnEast-byVote2', icon: 'table'  }
-          },
-          {
-            path: 'Comparison3',
-            component: () => import('@/views/tableau/Comparison3'),
-            name: 'Comparison 3',
-            meta: { title: 'Kowloon East Comparison', icon: 'table'  }
-          },
-          {
-            path: 'Motion3',
-            component: () => import('@/views/tableau/Motion3'),
-            name: 'Motion 3',
-            meta: { title: 'Kowloon East Motion', icon: 'table'  }
+            meta: { title: 'LegCo Voting Summary', icon: 'table'  }
           },
         ]
       },
@@ -384,37 +348,25 @@ export const constantRoutes = [
             path: 'NTWest1',
             component: () => import('@/views/tableau/NTWest1'),
             name: 'NTWest 1',
-            meta: { title: 'Records-NTWest-byCandidate1', icon: 'table'  }
+            meta: { title: '2016 Election Votes', icon: 'table'  }
           },
           {
             path: 'NTWest2',
             component: () => import('@/views/tableau/NTWest2'),
             name: 'NTWest 2',
-            meta: { title: 'Records-NTWest-byVote1', icon: 'table'  }
+            meta: { title: 'LegCo Attendance', icon: 'table'  }
           },
           {
             path: 'NTWest3',
             component: () => import('@/views/tableau/NTWest3'),
             name: 'NTWest 3',
-            meta: { title: 'Records-NTWest-byCandidate2', icon: 'table'  }
+            meta: { title: 'LegCo Motions Votes', icon: 'table'  }
           },
           {
             path: 'NTWest4',
             component: () => import('@/views/tableau/NTWest4'),
             name: 'NTWest 4',
-            meta: { title: 'Records-NTWest-byVote2', icon: 'table'  }
-          },
-          {
-            path: 'Comparison4',
-            component: () => import('@/views/tableau/Comparison4'),
-            name: 'Comparison 4',
-            meta: { title: 'NT West Comparison', icon: 'table'  }
-          },
-          {
-            path: 'Motion4',
-            component: () => import('@/views/tableau/Motion4'),
-            name: 'Motion 4',
-            meta: { title: 'NT West Motion', icon: 'table'  }
+            meta: { title: 'LegCo Voting Summary', icon: 'table'  }
           },
         ]
       },
@@ -429,37 +381,25 @@ export const constantRoutes = [
             path: 'NTEast1',
             component: () => import('@/views/tableau/NTEast1'),
             name: 'NTEast 1',
-            meta: { title: 'Records-NTEast-byCandidate1', icon: 'table'  }
+            meta: { title: '2016 Election Votes', icon: 'table'  }
           },
           {
             path: 'NTEast2',
             component: () => import('@/views/tableau/NTEast2'),
             name: 'NTEast 2',
-            meta: { title: 'Records-NTEast-byVote1', icon: 'table'  }
+            meta: { title: 'LegCo Attendance', icon: 'table'  }
           },
           {
             path: 'NTEast3',
             component: () => import('@/views/tableau/NTEast3'),
             name: 'NTEast 3',
-            meta: { title: 'Records-NTEast-byCandidate2', icon: 'table'  }
+            meta: { title: 'LegCo Motions Votes', icon: 'table'  }
           },
           {
             path: 'NTEast4',
             component: () => import('@/views/tableau/NTEast4'),
             name: 'NTEast 4',
-            meta: { title: 'Records-NTEast-byVote2', icon: 'table'  }
-          },
-          {
-            path: 'Comparison5',
-            component: () => import('@/views/tableau/Comparison5'),
-            name: 'Comparison 5',
-            meta: { title: 'NT East Comparison', icon: 'table'  }
-          },
-          {
-            path: 'Motion5',
-            component: () => import('@/views/tableau/Motion5'),
-            name: 'Motion 5',
-            meta: { title: 'NT East Motion', icon: 'table'  }
+            meta: { title: 'LegCo Voting Summary', icon: 'table'  }
           },
         ]
       }
