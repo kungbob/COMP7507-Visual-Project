@@ -81,7 +81,7 @@
       <div v-for="question in questionList" :key="question.no">
         <span style="white-space: nowrap">{{question.name}} - 
           <div v-if="question.value == -2">
-            <p>Very Disargee</p>
+            <p>Strongly Disargee</p>
           </div>
           <div v-if="question.value == -1">
             <p>Disargee</p>
@@ -93,7 +93,7 @@
             <p>Agree</p>
           </div>
           <div v-if="question.value == 2">
-            <p>Very Agree</p>
+            <p>Strongly Agree</p>
           </div>
         </span>
       </div>  
