@@ -5,9 +5,16 @@
         <img :src="'CandidatesImages/hui-chi-fung.jpg'">
       </el-aside>
       <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-        <el-footer>Footer</el-footer>
+        <el-header><h1>Hui Chi Fung (許智峯)</h1></el-header>
+        <el-main>
+          <p><b>Sex:</b> Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <b>Age:</b> 37<br>
+          <b>Geographical Constituency:</b> Hong Kong Island<br>
+          <b>Political Affiliation:</b> Democratic Party (民主黨)</p>
+          <b>2016 Legco Election Votes Received:</b> 42499</b><br>
+          <b>Attendance Percentage of the 6th LegCo Meetings:</b> 84.99%
+        </el-main>
+        <el-footer></el-footer>
       </el-container>
     </el-container>
   </div>
