@@ -43,7 +43,7 @@
           <div v-for="question in questionList" :key="question.no">
             <span
               class="demonstration"
-            >Question {{question.no}}. Do you agree with issues {{question.name}}</span>
+            >Question {{question.no}}. Do you agree with the issue {{question.name}}</span>
             <br />
             <el-radio-group v-model="question.value">
               <el-radio label="-2" name="type">Strongly Disargee</el-radio>
@@ -252,7 +252,7 @@ export default {
 
       for (var j = 0; j < pickedCandidates.length; j++) {
         var selected = this.search(pickedCandidates[j], this.allCandidatesData)
-        var baseScore = selected['Total marks'] - 50
+        var baseScore = selected['Total marks'] - 52.74
         valueList[j].push(baseScore)
       }
       
@@ -266,9 +266,9 @@ export default {
           })
           
           if (result[0]['vote'] == 'Yes') {
-            score *= 1
+            score *= 2
           } else if (result[0]['vote'] == 'No') {
-            score *= -1
+            score *= -2
           } else {
             score *= 0
           }
