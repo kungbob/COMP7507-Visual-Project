@@ -100,7 +100,7 @@ export const constantRoutes = [
         name: 'KlnWest',
         redirect: '/candidates/KlnWest/KlnWest1',
         component: () => import('@/views/Candidates/index'),
-        meta: { title: 'KlnWest', icon: 'table' },
+        meta: { title: 'Kowloon West', icon: 'table' },
         children: [
           {
             path: 'KlnWest1',
@@ -133,7 +133,7 @@ export const constantRoutes = [
         name: 'KlnEast',
         redirect: '/candidates/KlnEast/KlnEast1',
         component: () => import('@/views/Candidates/index'),
-        meta: { title: 'KlnEast', icon: 'table' },
+        meta: { title: 'Kowloon East', icon: 'table' },
         children: [
           {
             path: 'KlnEast1',
@@ -166,7 +166,7 @@ export const constantRoutes = [
         name: 'NTWest',
         redirect: '/candidates/NTWest/NTWest1',
         component: () => import('@/views/Candidates/index'),
-        meta: { title: 'NTWest', icon: 'table' },
+        meta: { title: 'N.T. West', icon: 'table' },
         children: [
           {
             path: 'NTWest1',
@@ -199,7 +199,7 @@ export const constantRoutes = [
         name: 'NTEast',
         redirect: '/candidates/NTEast/NTEast1',
         component: () => import('@/views/Candidates/index'),
-        meta: { title: 'NTEast', icon: 'table' },
+        meta: { title: 'N.T. East', icon: 'table' },
         children: [
           {
             path: 'NTEast1',
@@ -276,7 +276,7 @@ export const constantRoutes = [
         name: 'KlnWest',
         redirect: '/tableau/KlnWest/KlnWest1',
         component: () => import('@/views/tableau/index'),
-        meta: { title: 'KlnWest', icon: 'table' },
+        meta: { title: 'Kowloon West', icon: 'table' },
         children: [
           {
             path: 'KlnWest1',
@@ -309,7 +309,7 @@ export const constantRoutes = [
         name: 'KlnEast',
         redirect: '/tableau/KlnEast/KlnEast1',
         component: () => import('@/views/tableau/index'),
-        meta: { title: 'KlnEast', icon: 'table' },
+        meta: { title: 'Kowloon East', icon: 'table' },
         children: [
           {
             path: 'KlnEast1',
@@ -342,7 +342,7 @@ export const constantRoutes = [
         name: 'NTWest',
         redirect: '/tableau/NTWest/NTWest1',
         component: () => import('@/views/tableau/index'),
-        meta: { title: 'NTWest', icon: 'table' },
+        meta: { title: 'N.T. West', icon: 'table' },
         children: [
           {
             path: 'NTWest1',
@@ -375,7 +375,7 @@ export const constantRoutes = [
         name: 'NTEast',
         redirect: '/tableau/NTEast/NTEast1',
         component: () => import('@/views/tableau/index'),
-        meta: { title: 'NTEast', icon: 'table' },
+        meta: { title: 'N.T. East', icon: 'table' },
         children: [
           {
             path: 'NTEast1',
