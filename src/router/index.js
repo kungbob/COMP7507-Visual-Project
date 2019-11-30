@@ -66,7 +66,7 @@ export const constantRoutes = [
         name: 'HKIsland',
         redirect: '/tableau/HKIsland/HKIsland1',
         component: () => import('@/views/tableau/index'),
-        meta: { title: 'HKIsland', icon: 'table' },
+        meta: { title: 'Hong Kong Island', icon: 'table' },
         children: [
           {
             path: 'HKIsland1',
@@ -91,6 +91,18 @@ export const constantRoutes = [
             component: () => import('@/views/tableau/HKIsland4'),
             name: 'HKIsland 4',
             meta: { title: 'Records-HKIsland-byVote2', icon: 'table'  }
+          },
+          {
+            path: 'Comparison1',
+            component: () => import('@/views/tableau/Comparison1'),
+            name: 'Comparison 1',
+            meta: { title: 'Hong Kong Island Comparison', icon: 'table'  }
+          },
+          {
+            path: 'Motion1',
+            component: () => import('@/views/tableau/Motion1'),
+            name: 'Motion 1',
+            meta: { title: 'Hong Kong Island Motion', icon: 'table'  }
           },
         ]
       },
@@ -125,6 +137,18 @@ export const constantRoutes = [
             name: 'KlnWest 4',
             meta: { title: 'Records-KlnWest-byVote2', icon: 'table'  }
           },
+          {
+            path: 'Comparison2',
+            component: () => import('@/views/tableau/Comparison2'),
+            name: 'Comparison 2',
+            meta: { title: 'Kowloon West Comparison', icon: 'table'  }
+          },
+          {
+            path: 'Motion2',
+            component: () => import('@/views/tableau/Motion2'),
+            name: 'Motion 2',
+            meta: { title: 'Kowloon West Motion', icon: 'table'  }
+          },
         ]
       },
       {
@@ -157,6 +181,18 @@ export const constantRoutes = [
             component: () => import('@/views/tableau/KlnEast4'),
             name: 'KlnEast 4',
             meta: { title: 'Records-KlnEast-byVote2', icon: 'table'  }
+          },
+          {
+            path: 'Comparison3',
+            component: () => import('@/views/tableau/Comparison3'),
+            name: 'Comparison 3',
+            meta: { title: 'Kowloon East Comparison', icon: 'table'  }
+          },
+          {
+            path: 'Motion3',
+            component: () => import('@/views/tableau/Motion3'),
+            name: 'Motion 3',
+            meta: { title: 'Kowloon East Motion', icon: 'table'  }
           },
         ]
       },
@@ -191,6 +227,18 @@ export const constantRoutes = [
             name: 'NTWest 4',
             meta: { title: 'Records-NTWest-byVote2', icon: 'table'  }
           },
+          {
+            path: 'Comparison4',
+            component: () => import('@/views/tableau/Comparison4'),
+            name: 'Comparison 4',
+            meta: { title: 'NT West Comparison', icon: 'table'  }
+          },
+          {
+            path: 'Motion4',
+            component: () => import('@/views/tableau/Motion4'),
+            name: 'Motion 4',
+            meta: { title: 'NT West Motion', icon: 'table'  }
+          },
         ]
       },
       {
@@ -224,83 +272,17 @@ export const constantRoutes = [
             name: 'NTEast 4',
             meta: { title: 'Records-NTEast-byVote2', icon: 'table'  }
           },
-        ]
-      },
-      {
-        path: 'Comparison',
-        name: 'Comparison',
-        redirect: '/tableau/Comparison/Comparison1',
-        component: () => import('@/views/tableau/index'),
-        meta: { title: 'Comparison', icon: 'table' },
-        children: [
-          {
-            path: 'Comparison1',
-            component: () => import('@/views/tableau/Comparison1'),
-            name: 'Comparison 1',
-            meta: { title: 'HK Island', icon: 'table'  }
-          },
-          {
-            path: 'Comparison2',
-            component: () => import('@/views/tableau/Comparison2'),
-            name: 'Comparison 2',
-            meta: { title: 'Kowloon West', icon: 'table'  }
-          },
-          {
-            path: 'Comparison3',
-            component: () => import('@/views/tableau/Comparison3'),
-            name: 'Comparison 3',
-            meta: { title: 'Kowloon East', icon: 'table'  }
-          },
-          {
-            path: 'Comparison4',
-            component: () => import('@/views/tableau/Comparison4'),
-            name: 'Comparison 4',
-            meta: { title: 'NT West', icon: 'table'  }
-          },
           {
             path: 'Comparison5',
             component: () => import('@/views/tableau/Comparison5'),
             name: 'Comparison 5',
-            meta: { title: 'NT East', icon: 'table'  }
-          },
-        ]
-      },
-      {
-        path: 'Motion',
-        name: 'Motion Analytics',
-        redirect: '/tableau/Motion/Motion1',
-        component: () => import('@/views/tableau/index'),
-        meta: { title: 'Motion Analytics', icon: 'table' },
-        children: [
-          {
-            path: 'Motion1',
-            component: () => import('@/views/tableau/Motion1'),
-            name: 'Motion 1',
-            meta: { title: 'HK Island', icon: 'table'  }
-          },
-          {
-            path: 'Motion2',
-            component: () => import('@/views/tableau/Motion2'),
-            name: 'Motion 2',
-            meta: { title: 'Kowloon West', icon: 'table'  }
-          },
-          {
-            path: 'Motion3',
-            component: () => import('@/views/tableau/Motion3'),
-            name: 'Motion 3',
-            meta: { title: 'Kowloon East', icon: 'table'  }
-          },
-          {
-            path: 'Motion4',
-            component: () => import('@/views/tableau/Motion4'),
-            name: 'Motion 4',
-            meta: { title: 'NT West', icon: 'table'  }
+            meta: { title: 'NT East Comparison', icon: 'table'  }
           },
           {
             path: 'Motion5',
             component: () => import('@/views/tableau/Motion5'),
             name: 'Motion 5',
-            meta: { title: 'NT East', icon: 'table'  }
+            meta: { title: 'NT East Motion', icon: 'table'  }
           },
         ]
       }
