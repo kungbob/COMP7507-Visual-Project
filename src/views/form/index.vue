@@ -76,29 +76,29 @@
     <div v-else>
       <v-chart auto-resize :options="graph" />
 
-      <span>Your Selection on Issues:</span>
-      <br>
+      <p><b><u>Your Selection on Issues:</u></b></p>
       <div v-for="question in questionList" :key="question.no">
-        <span style="white-space: nowrap">{{question.name}} - 
+        <span style="white-space: nowrap"><b>{{question.name}}</b> - 
           <div v-if="question.value == -2">
-            <p>Strongly Disargee</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Strongly Disargee</p>
           </div>
           <div v-if="question.value == -1">
-            <p>Disargee</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Disargee</p>
           </div>
           <div v-if="question.value == 0">
-            <p>Neutral</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Neutral</p>
           </div>
           <div v-if="question.value == 1">
-            <p>Agree</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Agree</p>
           </div>
           <div v-if="question.value == 2">
-            <p>Strongly Agree</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Strongly Agree</p>
           </div>
         </span>
       </div>  
       <br>
-      <span>The candidate that the platform recommend is {{recommendCandidates}}</span>
+      <h3>Results</h3>
+      <p>The candidate that the platform recommend is <b><u>{{recommendCandidates}}</u></b>.</p>
     </div>
   </div>
 </template>
@@ -252,7 +252,7 @@ export default {
 
       for (var j = 0; j < pickedCandidates.length; j++) {
         var selected = this.search(pickedCandidates[j], this.allCandidatesData)
-        var baseScore = selected['Total marks']
+        var baseScore = selected['Total marks'] - 50
         valueList[j].push(baseScore)
       }
       
