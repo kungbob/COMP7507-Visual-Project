@@ -236,7 +236,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/tableau/HKIsland',
     name: 'Example',
-    meta: { title: 'Tableau Graph', icon: 'example' },
+    meta: { title: 'Comparison', icon: 'example' },
     children: [
       {
         path: 'HKIsland',
