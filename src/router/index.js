@@ -77,19 +77,19 @@ export const constantRoutes = [
           },
           {
             path: 'HKIsland2',
-            component: () => import('@/views/tableau/HuiChiFung'),
+            component: () => import('@/views/Candidates/HuiChiFung'),
             name: 'HKIsland Candidate 2',
             meta: { title: 'Hui Chi Fung', icon: 'table'  }
           },
           {
             path: 'HKIsland3',
-            component: () => import('@/views/tableau/IpLauSukYeeRegina'),
+            component: () => import('@/views/Candidates/IpLauSukYeeRegina'),
             name: 'HKIsland Candidate 3',
             meta: { title: 'Ip Lau Suk Yee Regina', icon: 'table'  }
           },
           {
             path: 'HKIsland4',
-            component: () => import('@/views/tableau/KwokWaiKeung'),
+            component: () => import('@/views/Candidates/KwokWaiKeung'),
             name: 'HKIsland Candidate 4',
             meta: { title: 'Kwok Wai Keung', icon: 'table'  }
           },
@@ -99,32 +99,32 @@ export const constantRoutes = [
         path: 'KlnWest',
         name: 'KlnWest',
         redirect: '/candidates/KlnWest/KlnWest1',
-        component: () => import('@/views/tableau/index'),
+        component: () => import('@/views/Candidates/index'),
         meta: { title: 'KlnWest', icon: 'table' },
         children: [
           {
             path: 'KlnWest1',
-            component: () => import('@/views/tableau/KlnWest1'),
+            component: () => import('@/views/Candidates/ChiangLaiWan'),
             name: 'KlnWest Candidate 1',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Chiang Lai Wan', icon: 'table'  }
           },
           {
             path: 'KlnWest2',
-            component: () => import('@/views/tableau/KlnWest2'),
+            component: () => import('@/views/Candidates/LeungMeiFun'),
             name: 'KlnWest Candidate 2',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Leung Mei Fun', icon: 'table'  }
           },
           {
             path: 'KlnWest3',
-            component: () => import('@/views/tableau/KlnWest3'),
+            component: () => import('@/views/Candidates/MoManChingClaudia'),
             name: 'KlnWest Candidate 3',
-            meta: { title: 'Records-KlnWest-byCandidate2', icon: 'table'  }
+            meta: { title: 'Mo Man Ching Claudia', icon: 'table'  }
           },
           {
             path: 'KlnWest4',
-            component: () => import('@/views/tableau/KlnWest4'),
+            component: () => import('@/views/Candidates/WongPikWanHelena'),
             name: 'KlnWest Candidate 4',
-            meta: { title: 'Records-KlnWest-byVote2', icon: 'table'  }
+            meta: { title: 'Wong Pik Wan Helena', icon: 'table'  }
           },
         ]
       },
@@ -132,32 +132,32 @@ export const constantRoutes = [
         path: 'KlnEast',
         name: 'KlnEast',
         redirect: '/candidates/KlnEast/KlnEast1',
-        component: () => import('@/views/tableau/index'),
+        component: () => import('@/views/Candidates/index'),
         meta: { title: 'KlnEast', icon: 'table' },
         children: [
           {
             path: 'KlnEast1',
-            component: () => import('@/views/tableau/KlnEast1'),
+            component: () => import('@/views/Candidates/TamManHoJeremyJansen'),
             name: 'KlnEast Candidate 1',
-            meta: { title: 'Records-KlnEast-byCandidate1', icon: 'table'  }
+            meta: { title: 'Tam Man Ho Jeremy Jansen', icon: 'table'  }
           },
           {
             path: 'KlnEast2',
-            component: () => import('@/views/tableau/KlnEast2'),
+            component: () => import('@/views/Candidates/TseWaiChunPaul'),
             name: 'KlnEast Candidate 2',
-            meta: { title: 'Records-KlnEast-byVote1', icon: 'table'  }
+            meta: { title: 'Tse Wai Chun Paul', icon: 'table'  }
           },
           {
             path: 'KlnEast3',
-            component: () => import('@/views/tableau/KlnEast3'),
+            component: () => import('@/views/Candidates/WongKwokKin'),
             name: 'KlnEast Candidate 3',
-            meta: { title: 'Records-KlnEast-byCandidate2', icon: 'table'  }
+            meta: { title: 'Wong Kwok Kin', icon: 'table'  }
           },
           {
             path: 'KlnEast4',
-            component: () => import('@/views/tableau/KlnEast4'),
+            component: () => import('@/views/Candidates/WuChiWai'),
             name: 'KlnEast Candidate 4',
-            meta: { title: 'Records-KlnEast-byVote2', icon: 'table'  }
+            meta: { title: 'Wu Chi Wai', icon: 'table'  }
           },
         ]
       },
@@ -165,32 +165,32 @@ export const constantRoutes = [
         path: 'NTWest',
         name: 'NTWest',
         redirect: '/candidates/NTWest/NTWest1',
-        component: () => import('@/views/tableau/index'),
+        component: () => import('@/views/Candidates/index'),
         meta: { title: 'NTWest', icon: 'table' },
         children: [
           {
             path: 'NTWest1',
-            component: () => import('@/views/tableau/NTWest1'),
+            component: () => import('@/views/Candidates/ChengChungTai'),
             name: 'NTWest Candidate 1',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Cheng Chung Tai', icon: 'table'  }
           },
           {
             path: 'NTWest2',
-            component: () => import('@/views/tableau/NTWest2'),
+            component: () => import('@/views/Candidates/ChuHoiDickEddie'),
             name: 'NTWest Candidate 2',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Chu Hoi Dick Eddie', icon: 'table'  }
           },
           {
             path: 'NTWest3',
-            component: () => import('@/views/tableau/NTWest3'),
+            component: () => import('@/views/Candidates/LeungCheCheung'),
             name: 'NTWest Candidate 3',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Leung Che Cheung', icon: 'table'  }
           },
           {
             path: 'NTWest4',
-            component: () => import('@/views/tableau/NTWest4'),
+            component: () => import('@/views/Candidates/TienMichaelPukSun'),
             name: 'NTWest Candidate 4',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Tien Michael Puk Sun', icon: 'table'  }
           },
         ]
       },
@@ -198,32 +198,32 @@ export const constantRoutes = [
         path: 'NTEast',
         name: 'NTEast',
         redirect: '/candidates/NTEast/NTEast1',
-        component: () => import('@/views/tableau/index'),
+        component: () => import('@/views/Candidates/index'),
         meta: { title: 'NTEast', icon: 'table' },
         children: [
           {
             path: 'NTEast1',
-            component: () => import('@/views/tableau/NTEast1'),
+            component: () => import('@/views/Candidates/ChanChiChuenRaymond'),
             name: 'NTEast 1',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Chan Chi Chuen Raymond', icon: 'table' }
           },
           {
             path: 'NTEast2',
-            component: () => import('@/views/tableau/NTEast2'),
+            component: () => import('@/views/Candidates/CheungChiuHung'),
             name: 'NTEast 2',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Cheung Chiu Hung', icon: 'table' }
           },
           {
             path: 'NTEast3',
-            component: () => import('@/views/tableau/NTEast3'),
+            component: () => import('@/views/Candidates/QuatElizabeth'),
             name: 'NTEast 3',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Quat Elizabeth', icon: 'table' }
           },
           {
             path: 'NTEast4',
-            component: () => import('@/views/tableau/NTEast4'),
+            component: () => import('@/views/Candidates/YeungAlvinNgokKiu'),
             name: 'NTEast 4',
-            meta: { title: '', icon: 'table'  }
+            meta: { title: 'Yeung Alvin Ngok Kiu', icon: 'table' }
           },
         ]
       }
