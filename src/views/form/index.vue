@@ -99,6 +99,17 @@
       <br>
       <h3>Results</h3>
       <p>The candidate that the platform recommend is <b><u>{{recommendCandidates}}</u></b>.</p>
+      <br>
+      <h3>Remarks</h3>
+      <p>The base score is calculated as follows: 
+        <ul>
+          <li><b>(1)</b> Votes in 2016 LegCo (Max. Score = 25): (Votes per candidates / Total votes of the district) / 0.25 * 25</li>
+          <li><b>(2)</b> Attendance in Council Meetings (Max. Score = 45): (Attendance of Meetings/ Total Number of meetings) * 45</li>
+          <li>Base score = <b>(1)</b> + <b>(2)</b> - 52.74</li>
+        </ul>
+        <i>(The score is subtracted by 52.74 so that the average of all candidates is 10 points and the visualization on the scores changes is better.)</i>
+      </p>
+
     </div>
   </div>
 </template>
