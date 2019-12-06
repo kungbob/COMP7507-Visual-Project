@@ -2,6 +2,28 @@
 
 **The current version is `v4.0+` build on `vue-cli`.
 
+## Requirement
+
+Please install those software before proceed.
+
+1. Git
+2. Node.js
+
+### Git For Windows
+[Git For Windows](https://git-scm.com/)
+
+### Git For Linux
+```
+sudo apt-get install git-all
+```
+
+### Node.js For Windows
+[Node.js](https://nodejs.org/en/)
+
+### Node.js For Linux
+[Node.js For Linux](https://github.com/nodesource/distributions/blob/master/README.md)
+
+
 ## Build Setup
 
 ```bash
