@@ -78,7 +78,7 @@
 
       <p><b><u>Your Selection on Issues:</u></b></p>
       <div v-for="question in questionList" :key="question.no">
-        <span style="white-space: nowrap"><b>{{question.name}}</b> - 
+        <span style="white-space: nowrap"><b>{{question.name}}</b>
           <div v-if="question.value == -2">
             <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your response:</b> Strongly Disargee</p>
           </div>
