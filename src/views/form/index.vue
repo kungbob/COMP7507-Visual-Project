@@ -131,7 +131,7 @@ export default {
       showGraph: false,
       graph: {
         title: {
-          text: "Projected Result Base on Question Answer",
+          text: "Recommendation Scores based on your responses in the Questionnaire",
           left: "center"
         },
         legend: {
